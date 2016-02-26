@@ -21,8 +21,8 @@ class TianyaSpiderSpider(scrapy.Spider):
         trs = selector.xpath('//table[@class="tab-bbs-list tab-bbs-list-2"]//tr')
         for tr in trs:
             item = TianyaItem()
-            item['title'] = tr.xpath('.//a[1]/text()').extract()
-            item['author'] = tr.xpath('.//a[2]/text()').extract()
+            item['title'] = tr.xpath('.//td[1]/a/text()').extract()
+            item['author'] = tr.xpath('.//td[2]/a/text()').extract()
             item['clicktime'] = tr.xpath('.//td[3]/text()').extract()
             item['backtime'] = tr.xpath('.//td[4]/text()').extract()
             item['backdate'] = tr.xpath('.//td[5]/text()').extract()

@@ -44,14 +44,14 @@ CONCURRENT_REQUESTS=32
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 SPIDER_MIDDLEWARES = {
-   'tianya.middlewares.MyCustomSpiderMiddleware': 543,
+   'tianya.middlewares.spidermiddleware.MyCustomSpiderMiddleware': 543,
 }
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#    'tianya.middlewares.MyCustomDownloaderMiddleware': 543,
-#}
+DOWNLOADER_MIDDLEWARES = {
+   'tianya.middlewares.downloadermiddleware.MyDownLoaderMiddleware': 777,
+}
 
 # Enable or disable extensions
 # See http://scrapy.readthedocs.org/en/latest/topics/extensions.html

@@ -9,14 +9,18 @@
     DropItem的异常会丢弃Item
 """
 from scrapy.exceptions import DropItem
+import scrapy
 
 class TianyaPipeline(object):
     """
     验证
     """
+
     def process_item(self, item, spider):
-        if item['title'] :
-            pass
+        if item:
+            if len(item['title']) > 0:
+                item['title'] = item['title'][0].lstrip().rstrip()
+                print item['title']
         else:
             raise DropItem('this is Item title is empty %s' % item)
         return item
