@@ -1,46 +1,17 @@
 # -*- coding: utf-8 -*-
-"""
-
-"""
-
 import scrapy
 from scrapy.selector import Selector,SelectorList
 from tianya.items import TianyaItem
 from scrapy.http import Request
+from scrapy_redis.spiders import RedisSpider
 from scrapy.log import INFO
-from scrapy.spiders.crawl import CrawlSpider
 
-
-class TianyaSpiderSpider(CrawlSpider):
-
+class TianyaSpiderSpider(scrapy.Spider):
     name = "tianya_spider"
     allowed_domains = ["tianya.cn"]
     start_urls = (
         'http://bbs.tianya.cn/list-333-1.shtml',
     )
-
-    @classmethod
-    def from_crawler(cls, crawler, *args, **kwargs):
-        spider = super(TianyaSpiderSpider,cls).from_crawler(crawler,*args,**kwargs)
-        spider.stats = crawler.stats
-        return spider
-
-    def start_requests(self):
-        """
-
-        :return:
-        """
-        self.log('开始从start_urls构建开始地址 构建Request对象')
-        return super(TianyaSpiderSpider,self).start_requests()
-
-    def make_requests_from_url(self,url):
-        """
-
-        :param url:
-        :return:
-        """
-        self.log("make_requests_from_url!")
-        return super(TianyaSpiderSpider,self).make_requests_from_url(url)
 
     def parse(self, response):
         """
@@ -51,8 +22,6 @@ class TianyaSpiderSpider(CrawlSpider):
         # 这个是一般选择器分析填充Item
         selector = Selector(response)
         trs = selector.xpath('//table[@class="tab-bbs-list tab-bbs-list-2"]//tr')
-        self.stats.set_value('liuyang','liuyang')
-
         for tr in trs:
             item = TianyaItem()
             item['title'] = tr.xpath('.//td[1]/a/text()').extract()
@@ -68,6 +37,6 @@ class TianyaSpiderSpider(CrawlSpider):
         #     link = 'http://bbs.tianya.cn'+links[-1]
         #     yield Request(link,callback=self.parse)
         # else:
-        #     self.log(u'已经到头了!', level=INFO)
+            self.log(u'已经到头了!', level=INFO)
 
 

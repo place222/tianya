@@ -1,0 +1,912 @@
+2016-02-28 19:10:30 [scrapy] INFO: Scrapy 1.0.5 started (bot: tianya)
+2016-02-28 19:10:30 [scrapy] INFO: Optional features available: ssl, http11
+2016-02-28 19:10:30 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'tianya.spiders', 'FEED_URI': 'file:///C:/Users/LY/PycharmProjects/tianya/items/tianya/tianya_spider/dee16c70de0b11e5835d0c8bfd4c4f2c.jl', 'CONCURRENT_REQUESTS': 32, 'SPIDER_MODULES': ['tianya.spiders'], 'BOT_NAME': 'tianya', 'LOG_FILE': 'logs\\tianya\\tianya_spider\\dee16c70de0b11e5835d0c8bfd4c4f2c.log'}
+2016-02-28 19:10:30 [scrapy] INFO: Enabled extensions: CloseSpider, FeedExporter, TelnetConsole, LogStats, CoreStats, SpiderState
+2016-02-28 19:10:30 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2016-02-28 19:10:30 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, MyCustomSpiderMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2016-02-28 19:10:30 [scrapy] INFO: Enabled item pipelines: TianyaPipeline
+2016-02-28 19:10:30 [scrapy] INFO: Spider opened
+2016-02-28 19:10:30 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-02-28 19:10:30 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2016-02-28 19:10:31 [scrapy] DEBUG: Crawled (200) <GET http://bbs.tianya.cn/list-333-1.shtml> (referer: None)
+2016-02-28 19:10:31 [scrapy] DEBUG: Scraped from <200 http://bbs.tianya.cn/list-333-1.shtml>
+{'author': [], 'backdate': [], 'backtime': [], 'clicktime': [], 'title': []}
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u842c\u83ef\u8857\u53cb'],
+ 'backdate': [u'02-28 19:10'],
+ 'backtime': [u'138'],
+ 'clicktime': [u'1491'],
+ 'title': u'\u6211\u5224\u65b7 @mytimeXway \u81f3\u5c11\u670960\u6b72!'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-2: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u5c0f_\u5149_\u68cd2'],
+ 'backdate': [u'02-28 19:10'],
+ 'backtime': [u'57'],
+ 'clicktime': [u'651'],
+ 'title': u'\u6211\u7684\u76ee\u6807\u5c31\u662f\u52aa\u529b\u6323\u94b1\u7136\u540e\u79fb\u6c11  \u8ba9\u5b50\u5b59\u540e\u4ee3\u4e0d\u518d\u88ab\u5220\u5e16'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-13: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u5c0f\u6eff\u5b50'],
+ 'backdate': [u'02-28 19:10'],
+ 'backtime': [u'42'],
+ 'clicktime': [u'2276'],
+ 'title': u'\u4ece\u672a\u7ed3\u675f'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u5b64\u5c71\u8001\u59962012'],
+ 'backdate': [u'02-28 19:10'],
+ 'backtime': [u'12'],
+ 'clicktime': [u'65'],
+ 'title': u'\u5730\u644a\u5996\u8c08\u8c08\u4efb\u5927\u70ae\u5173\u5fae\u535a\u4e8b\u4ef6'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-12: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u6cd5\u660e\u5357\u534e'],
+ 'backdate': [u'02-28 19:10'],
+ 'backtime': [u'1'],
+ 'clicktime': [u'1'],
+ 'title': u'\u8bf7\u5927\u5bb6\u8bf4\u8bf4\u671d\u97e9\u6700\u65b0\u5c40\u52bf\u548c\u672a\u6765\u8d70\u5411'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-15: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u590f\u96e8\u51ac\u7720'],
+ 'backdate': [u'02-28 19:09'],
+ 'backtime': [u'12'],
+ 'clicktime': [u'324'],
+ 'title': u'\u70c2\u5267\u300a\u4e0a\u763e\u300b\u4e0b\u67b6\u662f\u62e8\u4e71\u53cd\u6b63\uff0c\u6211\u8fde\u53cc\u811a\u90fd\u4e3e\u8d77\u6765\u8d5e\u6210\u3002'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-24: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'cnzmq'],
+ 'backdate': [u'02-28 19:09'],
+ 'backtime': [u'25'],
+ 'clicktime': [u'2841'],
+ 'title': u'\u9999\u6e2f\u539f\u5c45\u6c11\uff1a\u771f\u662f\u60b2\u54c0\uff01\u6211\u4eec\u7684\u597d\u65e5\u5b50\u5230\u5934\u4e86(\u8f6c\u8f7d)'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-19: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u60f3\u8d77\u4f60\u751c\u751c\u7684\u7b11'],
+ 'backdate': [u'02-28 19:09'],
+ 'backtime': [u'27'],
+ 'clicktime': [u'487'],
+ 'title': u'\u8fd9\u8089\u600e\u4e48\u5403\uff1f\u80fd\u5403\u5417\uff1f\uff01\uff01\uff01'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-12: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u7f85\u8cab\u4e2d'],
+ 'backdate': [u'02-28 19:09'],
+ 'backtime': [u'35'],
+ 'clicktime': [u'1117'],
+ 'title': u'\u7da0\u5149\u68ee\u6797'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u7ea2\u767d\u84dd\u5929'],
+ 'backdate': [u'02-28 19:09'],
+ 'backtime': [u'8131'],
+ 'clicktime': [u'496703'],
+ 'title': u'\u9009\u4e3e\u671f\u95f4\u6e38\u53f0\u6e7e'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-6: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u98ce\u5c18\u4e4b\u5bb688'],
+ 'backdate': [u'02-28 19:09'],
+ 'backtime': [u'28'],
+ 'clicktime': [u'447'],
+ 'title': u'\u5728\u5927\u89c4\u6a21\u7684\u79c1\u6709\u5236\u516c\u53f8\u4e2d\uff0c\u662f\u8001\u677f\u5927\uff0c\u8fd8\u662f\u516c\u53f8\u5236\u5ea6\u5927\uff1f'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-24: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u592a\u6781\u4e09\u6c34'],
+ 'backdate': [u'02-28 19:09'],
+ 'backtime': [u'3'],
+ 'clicktime': [u'111'],
+ 'title': u'\u5b59\u6d77\u82f1\u53ca\u5176\u4ed6\u8457\u540d\u516c\u77e5\u4e94\u767e\u591a\u5fae\u535a\u8d26\u53f7\u88ab\u5c01\uff0c\u54c8\u54c8\uff0c\u65e9\u8be5\u5982\u6b64\uff01'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-27: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u7765\u7768\u5929\u4e0b2016'],
+ 'backdate': [u'02-28 19:09'],
+ 'backtime': [u'10'],
+ 'clicktime': [u'210'],
+ 'title': u'\u53f0\u6e7e\u56de\u5f52\u7956\u56fd\u540e\uff0c\u53f0\u6e7e\u7248\u53cb\u60f3\u5e72\u4ec0\u4e48\uff1f'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-16: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u7b2c\u4e03\u53ea\u732b\u773c'],
+ 'backdate': [u'02-28 19:09'],
+ 'backtime': [u'53'],
+ 'clicktime': [u'1681'],
+ 'title': u'\u4eca\u5929\u6700\u5f3a\u5927\u8111\u4e2d\u65e5PK\u8d5b\u5f55\u5236\uff0c\u4e2d\u56fd\u52a0\u6cb9\uff01'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-7: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u5927\u540d\u9f0e\u9f0e2016'],
+ 'backdate': [u'02-28 19:09'],
+ 'backtime': [u'35'],
+ 'clicktime': [u'4135'],
+ 'title': u'\u66a8\u6fb3\u9580\u4e4b\u5f8c\uff0c\u9999\u6e2f\u518d\u62d2\u7d55\u53f0\u7063\u570b\u8b77\u7167\u8cbc\u7d19\u5165\u5883\u3002'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-20: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u5c0f_\u5149_\u68cd2'],
+ 'backdate': [u'02-28 19:09'],
+ 'backtime': [u'23'],
+ 'clicktime': [u'201'],
+ 'title': u'\u4efb\u5fd7\u5f3a\u8bf4\u7684\u8bdd\u662f\u8fd9\u6837\u7684\uff0c\u54ea\u91cc\u4e0d\u5bf9\u4e86 \u770b\u4e0d\u51fa\u554a'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-15: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u9065\u5f15\u6d6e\u4e91'],
+ 'backdate': [u'02-28 19:08'],
+ 'backtime': [u'23'],
+ 'clicktime': [u'2260'],
+ 'title': u'\u4e0d\u518d\u6b67\u89c6\uff1a\u65e5\u672c\u6027*\u4ea7\u4e1a\u70ed\u70c8\u6b22\u8fce\u4e2d\u56fd\u5ad6*\u5ba2(\u8f6c\u8f7d)'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-7: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u571f\u8c46\u8b66\u957f'],
+ 'backdate': [u'02-28 19:08'],
+ 'backtime': [u'34'],
+ 'clicktime': [u'692'],
+ 'title': u'\u8ba9\u6211\u6293\u5230\u73b0\u884c\u5c31\u4e0d\u597d\u610f\u601d\u4e86\uff0c\u518d\u6740\u4e00\u4e2a\u796d\u65d7\uff0c@\u5927\u540d\u9f0e\u9f0e2016'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-19: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'Twiz122'],
+ 'backdate': [u'02-28 19:08'],
+ 'backtime': [u'516'],
+ 'clicktime': [u'14541'],
+ 'title': u'\u8aaa\u8aaa\u81fa\u7063\u5e74\u8f15\u4eba\u70ba\u4ec0\u9ebc\u8b8a\u6210\u300c\u5929\u7136\u7368\u300d'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-16: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u541b\u706b\u53f8\u59292016'],
+ 'backdate': [u'02-28 19:08'],
+ 'backtime': [u'32'],
+ 'clicktime': [u'501'],
+ 'title': u'\u8bf7\u6559\uff1a\u4efb\u5fd7\u5f3a\u5982\u679c\u884c\u8d3f\u5c31\u5e94\u5224\u5211\uff0c\u5982\u679c\u8fdd\u7eaa\u5c31\u5e94\u5f00\u9664\u515a\u7c4d\uff0c\u5c01\u53f7\u662f\u4e2a\u4ec0\u4e48\u610f\u601d'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-33: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u6c83\u723e\u746a\u8001\u95c6\u5a18'],
+ 'backdate': [u'02-28 19:08'],
+ 'backtime': [u'62'],
+ 'clicktime': [u'1412'],
+ 'title': u'\u5c0f\u5973\u5b50\u6211\u5c0d\u6bdb\u5927\u5927\u7684\u656c\u4ef0\u771f\u7684\u5982\u6ed4\u6ed4\u6c5f\u6c34  \u9023\u7dbf\u4e0d\u7d55'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-17: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'loy3abc'],
+ 'backdate': [u'02-28 19:08'],
+ 'backtime': [u'34'],
+ 'clicktime': [u'3655'],
+ 'title': u'\u53ea\u56e0\u79f0\u6765\u81ea\u201c\u4e2d\u56fd\u53f0\u5317\u201d\u300a\u597d\u58f0\u97f3\u300b\u5973\u6b4c\u624b\u7adf\u88ab\u70ae\u8f70'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-22: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u94c1\u9a91\u7ea2\u5dfe'],
+ 'backdate': [u'02-28 19:08'],
+ 'backtime': [u'0'],
+ 'clicktime': [u'0'],
+ 'title': u'\u53f0\u6e7e\u753b\u5bb6\u5e2d\u6155\u5bb9\uff0c\u610f\u5927\u5229\u7537\u5b69(\u8f6c\u8f7d)'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-12: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u81fa\u7368\u4e0d\u662f\u4eba'],
+ 'backdate': [u'02-28 19:08'],
+ 'backtime': [u'336'],
+ 'clicktime': [u'10478'],
+ 'title': u'\u7531\u300a\u4e0a\u763e\u300b\u5f15\u53d1\u7684\u611f\u60f3\uff0c\u4e2d\u56fd\u8fd9\u6837\u4e0b\u53bb\u771f\u7684\u6ca1\u5e0c\u671b\u3002'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-22: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u65b0\u65f6\u4ee3\u7684\u519c\u6c11\u5de5'],
+ 'backdate': [u'02-28 19:08'],
+ 'backtime': [u'10'],
+ 'clicktime': [u'921'],
+ 'title': u'\u56fd\u6c11\u515a\u4e2d\u592e\u515a\u90e8\u5e7f\u573a\u906d\u63b7\u6c7d\u6cb9\u5f39\u7eb5\u706b(\u8f6c\u8f7d)'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-15: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u7a0b\u5e8f\u5316\u4ea4\u6613E'],
+ 'backdate': [u'02-28 19:08'],
+ 'backtime': [u'70'],
+ 'clicktime': [u'1167'],
+ 'title': u'\u58ec\u5fd7\u6f12\u8a00\u8ad6\u5f88\u5e73\u5e38\u554a, \u70ba\u4f55\u4e0d\u898b\u5bb9\u65bc\u7576\u5c40?'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-8: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u597d\u597d\u904e'],
+ 'backdate': [u'02-28 19:08'],
+ 'backtime': [u'18'],
+ 'clicktime': [u'1133'],
+ 'title': u'\u53f0\u7063\u4e0a\u96fb\u8996\u7bc0\u76ee\u7684\u5c08\u5bb6\u90fd\u6c92\u6c34\u6e96'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-13: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'mclubq123'],
+ 'backdate': [u'02-28 19:08'],
+ 'backtime': [u'62'],
+ 'clicktime': [u'8606'],
+ 'title': u'\u6c11\u8fdb\u515a\u7acb\u59d4\u9648\u4ead\u5983\uff1a\u8521\u7ef4\u6301\u73b0\u72b6\u3000\u4e0d\u5bb9\u738b\u6bc5\u591a\u8d39\u5fc3\uff01(\u8f6c\u8f7d)'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-22: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u9189\u9192\u5802'],
+ 'backdate': [u'02-28 19:08'],
+ 'backtime': [u'19'],
+ 'clicktime': [u'620'],
+ 'title': u'\u4e24\u848b\u9675\u5bdd\u6211\u770b\u8fd8\u662f\u4e58\u65e9\u8fc1\u56de\u8001\u5bb6'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-13: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u7231\u56fd\u5c11\u597390'],
+ 'backdate': [u'02-28 19:08'],
+ 'backtime': [u'27'],
+ 'clicktime': [u'1605'],
+ 'title': u'\u5657\u55e4...\u6bd4\u5927\u9646\u5c0f\u5b66\u751f\u8fd8\u4e0d\u5982'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-1: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u7765\u7768\u5929\u4e0b2016'],
+ 'backdate': [u'02-28 19:07'],
+ 'backtime': [u'47'],
+ 'clicktime': [u'5218'],
+ 'title': u'\u53f0\u72ec\u65b0\u52a8\u5411\uff1a\u767d\u8138\u51fa\u6765\u5ffd\u60a0\uff0c\u7ea2\u8138\u573a\u4e0b\u4f11\u606f'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-18: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'bank3707'],
+ 'backdate': [u'02-28 19:07'],
+ 'backtime': [u'83'],
+ 'clicktime': [u'1425'],
+ 'title': u'\u5927\u9678\u670b\u53cb\u5438\u83f8\u6bd4\u4f8b\u9ad8\u55ce?'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-9: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u4e2d\u83ef\u963f\u975a'],
+ 'backdate': [u'02-28 19:07'],
+ 'backtime': [u'164'],
+ 'clicktime': [u'6284'],
+ 'title': u'\u5370\u5ea6\uff0c\u662f\u4e00\u500b\u503c\u5f97\u6211\u5011\u5c0a\u656c\u7684\u570b\u5ea6\uff01'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-15: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u9189\u9192\u5802'],
+ 'backdate': [u'02-28 19:07'],
+ 'backtime': [u'89'],
+ 'clicktime': [u'4071'],
+ 'title': u'\u201c\u5973\u5b69\u8e72\u7740\u7b49\u5730\u94c1\u201d\u88ab\u6307\u4e0d\u61c2\u6559\u517b \u5f15\u4e89\u8bae(\u8f6c\u8f7d)'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-14: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u661f\u671f\u5929\u7761\u89c9'],
+ 'backdate': [u'02-28 19:07'],
+ 'backtime': [u'137'],
+ 'clicktime': [u'13039'],
+ 'title': u'\u770b\u4e86BBC\u7684\u7eaa\u5f55\u7247\uff0c\u7ec8\u4e8e\u77e5\u9053\u4e3a\u4ec0\u4e48\u4e2d\u56fd\u4eba\u88ab\u4eba\u770b\u4e0d\u8d77\u4e86'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-1: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u553e\u6cab\u661f\u5b50\u4e71\u98de'],
+ 'backdate': [u'02-28 19:07'],
+ 'backtime': [u'7'],
+ 'clicktime': [u'427'],
+ 'title': u'\u4efb\u5fd7\u5f3a\u5fae\u535a\u88ab\u5173\u95ed\u4e86  \u559c\u5927\u666e\u5954'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-8: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'dzh423'],
+ 'backdate': [u'02-28 19:07'],
+ 'backtime': [u'1'],
+ 'clicktime': [u'71'],
+ 'title': u'\u53f0\u6e05\u5927\u6559\u6388\u5f6d\u660e\u8f1d\uff0f\u5931\u53bb\u771f\u76f8\u7684\u53f0\u7063\u53f2(\u8f6c\u8f7d)'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-16: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u8001\u5b50\u662f\u5bcc\u4e8c\u4ee3'],
+ 'backdate': [u'02-28 19:07'],
+ 'backtime': [u'38'],
+ 'clicktime': [u'753'],
+ 'title': u'\u53d1\u4e2a\u5403\u7684\uff01\u987a\u4fbf\u804a\u804a\u6211\u4eec\u56fd\u5bb6\u7684\u516c\u5395\u5efa\u8bbe\u95ee\u9898\uff01'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-20: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u534e\u590f\u6c11\u65cf\u9b42'],
+ 'backdate': [u'02-28 19:07'],
+ 'backtime': [u'22'],
+ 'clicktime': [u'346'],
+ 'title': u'\u4efb\u5fd7\u5f3a\u516c\u7136\u85d0\u89c6\u6cd5\u5f8b\uff0c\u53ea\u5c01\u4ed6\u793e\u4ea4\u5e10\u53f7\u592a\u8f7b\u4e86\uff0c\u5e94\u8be5\u8ba9\u4ed6\u53bb\u76d1\u72f1\u5446\u4e0a\u51e0\u4e2a\u6708'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-32: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u4e0d\u592a\u75af\u72c2\u7684\u5154\u5b50'],
+ 'backdate': [u'02-28 19:06'],
+ 'backtime': [u'58'],
+ 'clicktime': [u'1454'],
+ 'title': u'\u201c\u5927\u540d\u9f0e\u9f0e2016\u201d\u5728FB\u6ce8\u518c\u7684\u540d\u5b57\u53eb\u5085\u897f\u6587'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-4: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'labert'],
+ 'backdate': [u'02-28 19:06'],
+ 'backtime': [u'6'],
+ 'clicktime': [u'756'],
+ 'title': u'\u67efp\u8aaa\u8b0a\u88ab\u6293\u5230\u4e86\uff01'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode character u'\u67ef' in position 0: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u541b\u706b\u53f8\u59292016'],
+ 'backdate': [u'02-28 19:06'],
+ 'backtime': [u'51'],
+ 'clicktime': [u'939'],
+ 'title': u'\u5c0f\u5f1f\u6cd5\u76f2\uff0c\u8bf7\u6559\u4e00\u4e0b\uff0c\u4efb\u5fd7\u5f3a\u8fdd\u53cd\u4ec0\u4e48\u6cd5\u4e86\uff1f\u8c01\u6307\u5bfc\u4e0b'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-23: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u4e91\u6e38\u6563\u4ebaa'],
+ 'backdate': [u'02-28 19:06'],
+ 'backtime': [u'6'],
+ 'clicktime': [u'71'],
+ 'title': u'\u8336\u53f6\u86cb'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-2: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u9999\u8549\u5df4\u8fa3'],
+ 'backdate': [u'02-28 19:06'],
+ 'backtime': [u'1'],
+ 'clicktime': [u'14'],
+ 'title': u'\u516c\u77e5\u7f8e\u5206\uff0c\u4f60\u53c8\u4e0d\u662f\u515a\u5458\uff0c\u66ff\u4efb\u5927\u70ae\u778e\u8d77\u4ec0\u4e48\u54c4,\u8bc1\u660e\u4f60\u65e0\u77e5\u8fd8\u662f\u4ec0\u4e48\uff1f'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-20: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u52ff\u5fd8\u6211ZM'],
+ 'backdate': [u'02-28 19:06'],
+ 'backtime': [u'15'],
+ 'clicktime': [u'483'],
+ 'title': u'\u7f51\u4fe1\u529e\uff1a\u4efb\u5fd7\u5f3a\u5fae\u535a\u53d1\u8fdd\u6cd5\u4fe1\u606f\u5f71\u54cd\u6076\u52a3\u88ab\u5173\u95ed'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-20: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'antijpkrusa'],
+ 'backdate': [u'02-28 19:06'],
+ 'backtime': [u'5'],
+ 'clicktime': [u'884'],
+ 'title': u'\u4efb\u5927\u70ae\u5b8c\u4e86'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-4: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u868a\u5b50\u522b\u54ac\u6211\u4e36'],
+ 'backdate': [u'02-28 19:06'],
+ 'backtime': [u'59'],
+ 'clicktime': [u'8386'],
+ 'title': u'\u5927\u9646\u5927\u53d4\u6df1\u5733\u5730\u94c1\u5927\u6218\u6e2f\u7537(\u8f6c\u8f7d)'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-11: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u6cd5\u660e\u5357\u534e'],
+ 'backdate': [u'02-28 19:06'],
+ 'backtime': [u'3'],
+ 'clicktime': [u'92'],
+ 'title': u'\u4e3a\u5565\u670d\u88c5\u5e97\u7684\u5851\u80f6\u6a21\u578b\u90fd\u662f\u5916\u56fd\u4eba\u7684\u6837\u5b50\uff1f'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-18: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u53f0\u72ec\u514b\u661f'],
+ 'backdate': [u'02-28 19:06'],
+ 'backtime': [u'106'],
+ 'clicktime': [u'5060'],
+ 'title': u'\u592e\u89c6\u7f51\u52a0\u5165\u5bf9\u4efb\u5fd7\u5f3a\u7684\u6279\u8bc4\uff08\u8fd9\u662f\u8a00\u8bba\u81ea\u7531\u7684\u8303\u7574\u5417\uff09'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-23: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u4e66\u5446\u5b50\u7684'],
+ 'backdate': [u'02-28 19:05'],
+ 'backtime': [u'2'],
+ 'clicktime': [u'93'],
+ 'title': u'\u53f0\u6e7e\u80fd\u770b"\u5927\u80f8\u6b66\u5a9a\u5a18"? \u603b\u5c40:\u4ed6\u4eec\u5c31\u8981\u539f\u7248'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u5c0f_\u5149_\u68cd2'],
+ 'backdate': [u'02-28 19:05'],
+ 'backtime': [u'31'],
+ 'clicktime': [u'274'],
+ 'title': u'\u5904\u7406\u4efb\u4f55\u4eba\uff0c\u90fd\u5fc5\u987b\u6709\u6cd5\u5f8b\u4f9d\u636e'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-13: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u56e0\u9177\u88ab\u522428\u5e74'],
+ 'backdate': [u'02-28 19:05'],
+ 'backtime': [u'1'],
+ 'clicktime': [u'18'],
+ 'title': u'\u4efb\u5fd7\u534e\u8fc7\u5f97\u6bd4\u4f60\u4eec\u597d\uff0c\u5728\u5fc3\u91cc\u9a82\u4f60\u4eec\u50bbX\u5462\u3002\u3002\u3002\u3002'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-16: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'u_99986140'],
+ 'backdate': [u'02-28 19:05'],
+ 'backtime': [u'3'],
+ 'clicktime': [u'110'],
+ 'title': u'\u4ece\u6bd5\u798f\u5251\u5230\u4efb\u5fd7\u5f3a\u8fd9\u5c31\u662f\u5634\u8d31\u7684\u4e0b\u573a\uff01\u4f60\u4eec\u9a82\u5427\uff01\u6211\u5403\u996d\u53bb\uff01'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-26: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'u_108723887'],
+ 'backdate': [u'02-28 19:05'],
+ 'backtime': [u'30'],
+ 'clicktime': [u'1179'],
+ 'title': u'\u53f0\u6e7e\u6709\u4e00\u534a\u5bb6\u5ead\u5e74\u6536\u5165\u8fde20\u4e07\u4eba\u6c11\u5e01\u90fd\u4e0d\u5230\uff0c\u597d\u7a77\u5594'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-10: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u597d\u597d\u904e'],
+ 'backdate': [u'02-28 19:05'],
+ 'backtime': [u'2'],
+ 'clicktime': [u'12'],
+ 'title': u'\u5fae\u535a\u61c9\u8a72\u5be6\u540d\u5236~'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-6: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u5929\u5143\u7684\u72fc'],
+ 'backdate': [u'02-28 19:05'],
+ 'backtime': [u'8'],
+ 'clicktime': [u'128'],
+ 'title': u'\u4ece\u4efb\u5927\u70ae\u4e8b\u4ef6\u770b\u51fa\u53f0\u7248\u7f51\u53cb\u4e9f\u5f85\u63d0\u9ad8\u6cd5\u5f8b\u7d20\u517b'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-19: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] DEBUG: Scraped from <200 http://bbs.tianya.cn/list-333-1.shtml>
+{'author': [u'\u7f85\u8cab\u4e2d'],
+ 'backdate': [u'02-28 19:05'],
+ 'backtime': [u'638'],
+ 'clicktime': [u'14661'],
+ 'title': u''}
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u5149\u815a\u5929\u5c0a'],
+ 'backdate': [u'02-28 19:04'],
+ 'backtime': [u'96'],
+ 'clicktime': [u'10929'],
+ 'title': u'\u5e74\u540e\u53f0\u5317\u8857\u5934\uff0c\u7e41\u534e\u5bcc\u8d35\u8fdc\u8d85\u738b\u5e9c\u4e95\uff0c\u6574\u6d01\u9ad8\u96c5\u79d2\u6740\u4e0a\u6d77\u5916\u6ee9\uff0c\u54e5\u8dea\u4e86\uff01'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-31: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'loy3abc'],
+ 'backdate': [u'02-28 19:04'],
+ 'backtime': [u'43'],
+ 'clicktime': [u'5555'],
+ 'title': u'\u5434\u5b97\u5baa\u592a\u725b\u903c\u4e86 \u4ed6\u8bf4\u9ec4\u5b89\u8fdf\u65e9\u4f1a\u88ab\u5904\u7406  \u6ca1\u60f3\u5230'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-6: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u592a\u5e73\u6d0b\u4e0a\u65e0\u8001\u864e'],
+ 'backdate': [u'02-28 19:04'],
+ 'backtime': [u'248'],
+ 'clicktime': [u'19300'],
+ 'title': u'\u662f\u4e2d\u56fd\u4eba\u5c31\u8bb0\u5f972\u520624\u79d2\u6240\u53d1\u751f\u7684\uff0c\u522b\u5fd8\u8bb0\u6211\u4eec\u7684\u803b\u8fb1\uff0c\u56fd\u803b\uff01\uff01'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-6: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u98ce\u884c\u56db\u5b63kokora'],
+ 'backdate': [u'02-28 19:03'],
+ 'backtime': [u'25'],
+ 'clicktime': [u'1201'],
+ 'title': u'\u4e0d\u662f\u4e0d\u62a5\uff0c\u65f6\u5019\u672a\u5230\uff1a\u4efb\u5fd7\u5f3a\u7684\u201c\u597d\u65e5\u5b50\u201d\u8981\u5230\u5934\u4e86'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-22: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u6d6a\u5cf6\u901f\u6043'],
+ 'backdate': [u'02-28 19:03'],
+ 'backtime': [u'31'],
+ 'clicktime': [u'1347'],
+ 'title': u'\u8c6c\u54e5\u975a\u4e4b\u6240\u4ee5\u751f\u5ee3\u96fb\u7e3d\u5c40\u7684\u6c23,\u539f\u56e0\u53ea\u6709\u4e00\u500b~~~~~~~~~~~~~~'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-12: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u541b\u706b\u53f8\u59292016'],
+ 'backdate': [u'02-28 19:02'],
+ 'backtime': [u'16'],
+ 'clicktime': [u'307'],
+ 'title': u'\u8bf7\u6559\uff1a\u5982\u679c\u4efb\u5fd7\u5f3a\u4e0d\u662f\u515a\u5458\uff0c\u8bf4\u8fd9\u4e9b\u8bdd\u4f1a\u88ab\u5c01\u53f7\u4e48\uff1f'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-22: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u6d2a\u78ca\u724c\u8907\u8b80\u6a5f'],
+ 'backdate': [u'02-28 19:02'],
+ 'backtime': [u'57'],
+ 'clicktime': [u'3981'],
+ 'title': u'\u6700\u8fd1\u7f8e\u570b\u5a1b\u6a02\u5f71\u8996\u696d\uff0c\u4e2d\u570b\u5143\u7d20\u8d8a\u4f86\u8d8a\u591a'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-17: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u590f\u96e8\u51ac\u7720'],
+ 'backdate': [u'02-28 19:02'],
+ 'backtime': [u'140'],
+ 'clicktime': [u'6201'],
+ 'title': u'\u53f0\u6e7e\u8bf4\u5f97\u5bf9 : \u5927\u9646\u4e0d\u6539\u53d8\u201c\u4eba\u6cbb\u201d\u793e\u4f1a\u5c31\u6ca1\u6709\u672a\u6765\u3002'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-4: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u9065\u5f15\u6d6e\u4e91'],
+ 'backdate': [u'02-28 19:02'],
+ 'backtime': [u'16'],
+ 'clicktime': [u'870'],
+ 'title': u'\u8bba\u201c\u4efb\u5927\u70ae\u201d\u7684\u5012\u6389:\u70ae\u53e3\u59cb\u7ec8\u5bf9\u51c6\u4eba\u6c11\u4e0e\u653f\u5e9c(\u56fe)(\u8f6c\u8f7d)'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-8: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u4e2d\u56fd\u9632\u5f39\u73bb\u7483\u5fc3'],
+ 'backdate': [u'02-28 19:02'],
+ 'backtime': [u'38'],
+ 'clicktime': [u'3228'],
+ 'title': u'\u7eff\u540d\u5634\u8bf4\u5982\u679c\u9646\u5ba2\u4e0d\u6765\uff0c\u53f0\u6e7e\u5c31\u5bf9\u4e1c\u5357\u4e9a\u5357\u4e9a\u975e\u6d32\u514d\u7b7e\u62db\u63fd\u8d35\u5ba2'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-27: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u793e\u5340\u4e00\u865f'],
+ 'backdate': [u'02-28 19:01'],
+ 'backtime': [u'126'],
+ 'clicktime': [u'5471'],
+ 'title': u'\u8607\u806f\u628a\u8499\u53e4\u5206\u88c2\u51fa\u53bb \u5927\u9678\u4eba\u70ba\u4f55\u4e0d\u602a\u8607\u806f\u8981\u602a\u570b\u6c11\u9ee8?'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-8: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u7765\u7768\u5929\u4e0b2016'],
+ 'backdate': [u'02-28 19:01'],
+ 'backtime': [u'0'],
+ 'clicktime': [u'16'],
+ 'title': u'\u53f0\u6e7e\u540c\u5b66\u9274\u5b9a\u4e00\u4e0b\u8fd9\u4e2a\u4eba\uff0c\u4f60\u4eec\u7f8e\u56fd\u7238\u7238\u6276\u6301\u7684\u548c\u5e73\u536b\u58eb'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-24: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u6cf0\u62d4\u76f4'],
+ 'backdate': [u'02-28 19:00'],
+ 'backtime': [u'45'],
+ 'clicktime': [u'4422'],
+ 'title': u'\u6211\u662f\u56fc\u6e7e\u4eba  \u4e0b\u8f88\u5b50\u8d85\u60f3\u5f53\u5927\u9646\u4eba'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-4: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u5c0f\u6eff\u5b50'],
+ 'backdate': [u'02-28 19:00'],
+ 'backtime': [u'59'],
+ 'clicktime': [u'2173'],
+ 'title': u'\u81ea\u5df1\u7684\u848b\u516c\u81ea\u5df1\u6d17'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-7: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'jiehan176'],
+ 'backdate': [u'02-28 19:00'],
+ 'backtime': [u'14'],
+ 'clicktime': [u'3179'],
+ 'title': u'\u6c11\u8fdb\u515a\u9ec4\u4f1f\u54f2\u3001\u90d1\u8fd0\u9e4f\u610f\u6deb\u738b\u6bc5\u6f14\u8bb2'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-15: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u672a\u592e\u5bab237444192'],
+ 'backdate': [u'02-28 19:00'],
+ 'backtime': [u'77'],
+ 'clicktime': [u'4099'],
+ 'title': u'\u53f0\u7701\u7528\u7231\u53d1\u7535\u5927\u9646\u62d2\u7edd\u78c1\u6d6e\u6709\u4ec0\u4e48\u533a\u5225\uff0c\u6211\u4e0d\u76f8\u4fe1\u4e00\u56fd\u4e24\u667a\uff0c\u5929\u4e0b\u4e4c\u9e26\u4e00\u822c\u9ed1(\u8f6c\u8f7d)'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-33: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u6d2a\u78ca\u724c\u8907\u8b80\u6a5f'],
+ 'backdate': [u'02-28 19:00'],
+ 'backtime': [u'56'],
+ 'clicktime': [u'5818'],
+ 'title': u'G20\u300c\u592a\u786c\u4e86\u300d \u53f0\u7063\u8a18\u8005\u5feb\u9583\u53bb\u63a1\u8a2a\u5a1b\u6a02\u65b0\u805e(\u8f6c\u8f7d)'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 3-7: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u5c0f\u82f1\u4e09\u6253\u767d\u9aa8\u7cbe'],
+ 'backdate': [u'02-28 19:00'],
+ 'backtime': [u'1'],
+ 'clicktime': [u'72'],
+ 'title': u'\u5bb3\u6015\u53f0\u7248\u88ab\u5c01\u7684\u63d0\u524d\u8fdb\u7fa4'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-10: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u5730\u7403\u8054\u90a6\u519b\u59d4'],
+ 'backdate': [u'02-28 19:00'],
+ 'backtime': [u'70'],
+ 'clicktime': [u'5232'],
+ 'title': u'\u5feb\u6765\u56f4\u89c2\u7eff\u6bdb\u5728\u63a8\u7279\u4e0a\u7684\u8a00\u8bba\uff0c\u5bf9\u4e8e\u5f2f\u5f2f\u6211\u4e5f\u662f\u9189'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-21: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u60df\u7b80\u662f\u4ece'],
+ 'backdate': [u'02-28 18:59'],
+ 'backtime': [u'44'],
+ 'clicktime': [u'2566'],
+ 'title': u'\u6211\u89c9\u5f97\u5317\u6d0b\u653f\u5e9c\u662f\u8fd1\u4ee3\u552f\u4e00\u53ef\u5708\u53ef\u70b9\u7684\u4e2d\u56fd\u653f\u5e9c'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-20: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'asaxtc911911'],
+ 'backdate': [u'02-28 18:59'],
+ 'backtime': [u'26'],
+ 'clicktime': [u'915'],
+ 'title': u'\u505c\u6b62\u8ffd\u6740\u4efb\u5fd7\u5f3a'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-6: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'\u88f8\u5954\u5f97\u8682\u8681'],
+ 'backdate': [u'02-28 18:59'],
+ 'backtime': [u'96'],
+ 'clicktime': [u'2700'],
+ 'title': u'\u4efb\u5927\u70ae\u7684\u5fae\u535a\u88ab\u5173\u95ed\u4e86'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-9: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] ERROR: Error processing {'author': [u'LIUCINEMA'],
+ 'backdate': [u'02-28 18:59'],
+ 'backtime': [u'1154'],
+ 'clicktime': [u'41233'],
+ 'title': u'\u611b\u6211\u9752\u5929\u6717\u6717\u7684\u5927\u4e2d\u83ef(\u8f6c\u8f7d)'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "build\bdist.win-amd64\egg\tianya\pipelines.py", line 23, in process_item
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-9: ordinal not in range(128)
+2016-02-28 19:10:31 [tianya_spider] INFO: 已经到头了!
+2016-02-28 19:10:31 [scrapy] INFO: Closing spider (finished)
+2016-02-28 19:10:31 [scrapy] INFO: Stored jsonlines feed (2 items) in: file:///C:/Users/LY/PycharmProjects/tianya/items/tianya/tianya_spider/dee16c70de0b11e5835d0c8bfd4c4f2c.jl
+2016-02-28 19:10:31 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 227,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 16643,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2016, 2, 28, 11, 10, 31, 511000),
+ 'item_scraped_count': 2,
+ 'log_count/DEBUG': 4,
+ 'log_count/ERROR': 79,
+ 'log_count/INFO': 89,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2016, 2, 28, 11, 10, 30, 925000)}
+2016-02-28 19:10:31 [scrapy] INFO: Spider closed (finished)

@@ -9,6 +9,7 @@
     DropItem的异常会丢弃Item
 """
 from scrapy.exceptions import DropItem
+import scrapy
 
 class TianyaPipeline(object):
     """
